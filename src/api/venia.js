@@ -3,7 +3,7 @@ class VeniaAPI {
 
     Options = {
         method: "POST",
-        mode: "cors",
+        mode: "no-cors",
         headers: {
             "Content-Type": "application/json",
             "Accept": "application/json",
