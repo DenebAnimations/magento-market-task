@@ -7,9 +7,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: Build-Vue
-      uses: LizAinslie/VueBuildToBranchAction@1.0.2
+      uses: xRealNeon/VuePagesAction@1.0.1
       with:
         username: 'DenebAnimations'
         reponame: 'magento-market-task'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
-        branch: 'gh-pages' # defaults to 'gh-pages' but can be changed
