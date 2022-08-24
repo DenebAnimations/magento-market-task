@@ -9,9 +9,9 @@ echo "[INFO] Building project..."
 npm run build
 
 echo "[INFO] Removing old files..."
-rm -rf gh-pages/*
+rm -rf docs/*
 
 echo "[INFO] Copying new files..."
-cp -R dist/. gh-pages/ 
+cp -R dist/. docs/ 
 
 echo "[SUCCESS] Build done"
