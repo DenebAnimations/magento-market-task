@@ -126,7 +126,7 @@ export default {
         width: calc(100% - 4rem);
         height: calc(100vh - 4rem);
     }
-    .suspence {
+    .suspense {
         overflow-y: scroll;
     }
 }
