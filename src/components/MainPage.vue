@@ -102,6 +102,7 @@ export default {
     }
     .suspense {
         flex-direction: column;
+        overflow-y: unset;
     }
     .path {
         margin: 0 0 0 1rem;
@@ -125,6 +126,9 @@ export default {
         width: calc(100% - 4rem);
         height: calc(100vh - 4rem);
     }
+    .suspence {
+        overflow-y: scroll;
+    }
 }
 
 @media (min-width: 640px) {
@@ -136,6 +140,18 @@ export default {
 @media (max-width: 640px) {
     .products {
         grid-template-columns: repeat(auto-fill, 240px);
+    }
+}
+
+@media (max-width: 540px) {
+    .products {
+        grid-template-columns: repeat(auto-fill, 224px);
+    }
+}
+
+@media (max-width: 500px) {
+    .products {
+        grid-template-columns: repeat(auto-fill, 100%);
     }
 }
 
@@ -165,7 +181,6 @@ export default {
 
 .suspense {
     display: flex;
-    overflow-y: scroll;
     height: 100%;
 }
 

@@ -2,13 +2,13 @@
     <div class="header">
         <h1>{{ title }}</h1>
 
-        <n-space size="large">
-            <n-button text strong quaternary round v-on:click="cartOpen">
+        <n-space size="small">
+            <n-button class="button" strong quaternary round v-on:click="cartOpen">
                 <template #icon>
                     <n-icon size="24"> <ShoppingCartOutlined /> </n-icon>
                 </template>
             </n-button>
-            <n-button text strong quaternary round v-on:click="profileOpen">
+            <n-button class="button" strong quaternary round v-on:click="profileOpen">
                 <template #icon>
                     <n-icon size="24"> <PersonOutlineRound /> </n-icon>
                 </template>
@@ -71,5 +71,9 @@ h1, h2, h3 {
     align-items: center;
     border-bottom: 1px solid black;
     margin: 0 2rem;
+}
+
+.button {
+    padding: 8px
 }
 </style>

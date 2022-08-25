@@ -65,7 +65,7 @@ export default {
 
 .card {
     cursor: pointer;
-    height: 100%
+    height: fit-content;
 }
 .card:hover {
     border: var(--n-color-target) 1px solid;
