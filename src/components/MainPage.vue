@@ -204,7 +204,6 @@ export default {
 }
 
 .card-elevated {
-    /* position: absolute; */
     width: 100%;
     height: 100%;
     box-shadow: 0px 8px 16px 0px #00000080;

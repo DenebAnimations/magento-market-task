@@ -5,12 +5,12 @@
         <n-space size="small">
             <n-button class="button" strong quaternary round v-on:click="cartOpen">
                 <template #icon>
-                    <n-icon size="24"> <ShoppingCartOutlined /> </n-icon>
+                    <n-icon size="24"> <MaterialIcon icon="shopping_cart" /> </n-icon>
                 </template>
             </n-button>
             <n-button class="button" strong quaternary round v-on:click="profileOpen">
                 <template #icon>
-                    <n-icon size="24"> <PersonOutlineRound /> </n-icon>
+                    <n-icon size="24"> <MaterialIcon icon="person" /> </n-icon>
                 </template>
             </n-button>
         </n-space>
@@ -19,7 +19,7 @@
 
 <script>
 import { NButton, NIcon, NSpace, useMessage } from "naive-ui"
-import { ShoppingCartOutlined, PersonOutlineRound } from "@vicons/material";
+import MaterialIcon from "./icons/MaterialIcon.vue"
 
 export default {
     name: 'AppHeader',
@@ -41,7 +41,7 @@ export default {
     },
     components: {
         NButton, NIcon, NSpace,
-        ShoppingCartOutlined, PersonOutlineRound
+        MaterialIcon
     },
     props: {
         title: String,

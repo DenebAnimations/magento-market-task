@@ -16,13 +16,13 @@
                 <div class="card-footer">
                     <n-button class="card-button" strong icon-placement="right" type="primary" v-if="!stock">
                         <template #icon>
-                            <n-icon> <AddShoppingCartRound /> </n-icon>
+                            <n-icon size="24"> <MaterialIcon icon="add_shopping_cart" /> </n-icon>
                         </template>
                         {{ price.value }} {{price.currency}}
                     </n-button>
                     <n-button class="card-button" strong icon-placement="left" type="default" disabled v-else>
                         <template #icon>
-                            <n-icon> <DoNotDisturbRound /> </n-icon>
+                            <n-icon size="24"> <MaterialIcon icon="block" /> </n-icon>
                         </template>
                         Out of stock
                     </n-button>
@@ -34,13 +34,13 @@
 
 <script>
 import { NButton, NCard, NIcon, NImage, NSpin } from "naive-ui"
-import { AddShoppingCartRound, DoNotDisturbRound } from "@vicons/material";
+import MaterialIcon from "./icons/MaterialIcon.vue"
 
 export default {
     name: "ProductCard",
     components: {
         NButton, NCard, NIcon, NImage, NSpin,
-        AddShoppingCartRound, DoNotDisturbRound
+        MaterialIcon
     },
     props: {
         title: String,

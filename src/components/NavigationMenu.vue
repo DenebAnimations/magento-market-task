@@ -6,14 +6,15 @@
 import { h } from "vue"
 import { venia } from '@/api/venia'
 import { NMenu, NIcon } from 'naive-ui'
-import { ListAltOutlined } from '@vicons/material'
 
-const icon = (i) => () => h(NIcon, null, { default: () => h(i) })
+import MaterialIcon from "./icons/MaterialIcon.vue"
+
+const icon = (i) => () => h(<NIcon size="24"/>, null, { default: () => h(i) })
 
 const MenuHeader = {
     label: "Categories",
     key: JSON.stringify({ label: "Home", key: "home" }),
-    icon: icon(ListAltOutlined),
+    icon: icon(<MaterialIcon icon="menu" />),
 }
 
 function process_tree(data) {
